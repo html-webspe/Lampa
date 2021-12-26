@@ -858,7 +858,7 @@ button {
     color: #817470;
     font-size: 18px;
     line-height: 1.5; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 1200px) {
       .select__option {
         font-size: 12px; } }
     .select__option._select-selected {
