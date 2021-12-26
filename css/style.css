@@ -928,6 +928,9 @@ button {
     border: 1px solid #d9d9d9;
     border-top: 0;
     padding: 10px 0px 5px 0px; }
+    @media (max-width: 767.98px) {
+      .select__options {
+        top: 110%; } }
   .select__scroll {
     overflow-y: auto;
     overflow-x: hidden;
