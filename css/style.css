@@ -351,7 +351,8 @@ button {
       width: 100%; }
       @media (max-width: 767.98px) {
         .profile-label__select .select__title {
-          padding: 8px 0; } }
+          padding: 8px 0;
+          font-size: 12px; } }
       .profile-label__select .select__value {
         padding-left: 57px; }
         @media (min-width: 991.98px) {
