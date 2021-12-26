@@ -159,7 +159,9 @@
          width: 100%;
 
          &__title {
-            border: 1px solid #ededed;
+            @media (max-width:$md3+px) {
+               padding: 8px 0;
+            }
          }
 
          &__value {
