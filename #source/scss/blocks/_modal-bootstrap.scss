@@ -1,0 +1,101 @@
+#modal-password {
+   .modal-content {
+      padding: 66px 0;
+   }
+
+   .modal-dialog {
+      margin: 10.75rem auto;
+   }
+
+   .modal-header {
+      justify-content: center;
+      margin-bottom: 44px;
+      border: none;
+
+
+      .close {
+         position: absolute;
+         top: -30px;
+         right: -15px;
+         color: #fff;
+         font-size: 2rem;
+         margin: 0;
+         padding: 0;
+         font-weight: 400;
+
+         @media (max-width:$md4+px) {
+            top: 10px;
+            right: 10px;
+            color: #000;
+         }
+      }
+   }
+
+   .modal-title {
+      font-size: 28px;
+      color: #594741;
+      font-weight: bold;
+      text-align: center;
+
+   }
+
+   .modal-body {
+      text-align: center;
+      padding: 0;
+      margin: 0 auto;
+
+      @media (max-width:$md4+px) {
+         width: 90%;
+      }
+
+      @media (min-width:$md4+px) {
+         width: 355px;
+      }
+
+      a {
+         font-size: 19px;
+         color: #000;
+         text-decoration: underline;
+      }
+   }
+
+   .profile-label {
+      align-items: center;
+   }
+
+   .profile-label__icon {
+
+      margin-right: 0;
+
+      i {
+         &:before {
+            font-size: 20px;
+         }
+      }
+
+      .fa-minus-circle {
+         &:before {
+            color: #ff5c5c;
+         }
+      }
+   }
+
+   .btn {
+      padding: 18px 38px;
+      background-color: #f7e2c3;
+      border-radius: 36px;
+      color: #000;
+      margin-bottom: 43px;
+
+      &:hover {
+         background-color: #594741;
+         color: #fff;
+      }
+   }
+
+   a {
+      font-size: 19px;
+      color: #000;
+      text-decoration: underline;
+   }
+}

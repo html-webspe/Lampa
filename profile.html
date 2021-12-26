@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Профиль</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+	<section class="lmp-section-profile profile pt-6">
+   <div class='container'>
+
+      <div class="row mb-5">
+         <div class="col-12 text-center">
+            <h2 class="section-title">МОЙ ПРОФИЛЬ</h2>
+         </div>
+      </div>
+      <form class="row profile-form align-items-md-center ">
+         <div class="col-12 col-md-3">
+            <div class="profile__avatar">
+               <div class="profile__avatar-img">
+                  <img src="img/profile/profile-avatar.jpg" alt="profile-avatar">
+               </div>
+               <span class="profile__fio">
+                  Имя Фамилия
+               </span>
+            </div>
+         </div>
+         <div class="col-12 col-md-8 mb-3 offset-md-1 mb-lg-5">
+            <div class="row justify-content-md-between ">
+               <fieldset class="col-md-6">
+                  <label class="profile-label">
+                     <span class="profile-label__icon"><i class="fas fa-user"></i></span>
+                     <input type="text" class="profile-label__input input" placeholder="Имя" required />
+                     <span class="profile-label__error">111</span>
+                  </label>
+                  <label class="profile-label">
+                     <span class="profile-label__icon"><i class="fas fa-user"></i></span>
+                     <input type="text" class="profile-label__input input" placeholder="Фамилия" required />
+                     <span class="profile-label__error"></span>
+                  </label>
+                  <label class="profile-label">
+                     <span class="profile-label__icon"> <i class="far fa-calendar"></i></span>
+                     <input type="text" class="profile-label__input input" placeholder="Дата рождения" required />
+                     <span class="profile-label__error"></span>
+                  </label>
+                  <label class="profile-label profile-label__select">
+                     <span class="profile-label__icon"><i class="fas fa-venus-mars"></i></span>
+                     <!-- <input type="text" class="profile-label__input input" placeholder="Пол" required />-->
+                     <select class="profile-header__select">
+                        <option value="пол" selected="selected">Пол</option>
+                        <option value="Муж">Муж</option>
+                        <option value="Жен">Жен</option>
+                     </select>
+                     <span class="profile-label__error"></span>
+                  </label>
+               </fieldset>
+               <fieldset class="col-md-6">
+                  <label class="profile-label ">
+                     <span class="profile-label__icon"><i class="fas fa-phone-alt"></i></span>
+                     <input type="tel" class="profile-label__input input" placeholder="Номер телефона" required />
+                     <span class="profile-label__error"></span>
+                     <span class="profile-label__icon profile-label__unlock">
+                        <i class="fas fa-unlock-alt"></i>
+                        <span class="fieldset-tooltip">
+                           обратитесь <br> в службу поддержки
+                        </span>
+                     </span>
+                  </label>
+                  <label class="profile-label">
+                     <span class="profile-label__icon"><i class="fas fa-envelope"></i></span>
+                     <input type="email" class="profile-label__input input" placeholder="E-mail" required />
+                     <span class="profile-label__error"></span>
+                  </label>
+                  <button type="button" class="btn btn-transparent" data-toggle="modal"
+                     data-target="#modal-password">Изменить пароль</button>
+               </fieldset>
+            </div>
+         </div>
+         <div class="col-12">
+            <div class="row justify-content-center text-center">
+               <button type="button" class="btn btn-acent">Сохранить изменения</button>
+
+            </div>
+         </div>
+      </form>
+   </div>
+</section>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Изминение пароля</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="#" class="modal-password__form">
+						<label class="profile-label">
+							<input type="password" class="profile-label__input input" placeholder="Введите старый пароль"
+								required />
+							<span class="profile-label__icon"><i class="far fa-check-circle"></i></span>
+							<span class="profile-label__error"></span>
+						</label>
+						<label class="profile-label">
+							<input type="password" class="profile-label__input input" placeholder="Введите новый пароль"
+								required />
+							<span class="profile-label__error"></span>
+						</label>
+						<label class="profile-label">
+							<input type="password" class="profile-label__input input" placeholder="Повторите старый пароль"
+								required />
+
+							<span class="profile-label__icon"><i class="fas fa-minus-circle"></i></span>
+							<span class="profile-label__error"></span>
+						</label>
+						<button type="button" class="btn btn-acent modal-password__btn">Сохранить пароль</button>
+					</form>
+
+					<a href="#" class="">Забыли пароль</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

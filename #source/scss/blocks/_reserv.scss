@@ -1,0 +1,145 @@
+.lmp-section-reserv {
+
+
+   .lmp-reserv {
+      position: relative;
+      width: 100%;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 23px rgba(0, 0, 0, .15);
+
+      @media (max-width:$md4+px) {
+         margin-left: 15px;
+         margin-right: 15px;
+      }
+
+      &:after {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         border-radius: 10px 10px 0 0;
+         background-color: #f7e2c3;
+         z-index: -1;
+      }
+
+      @media (min-width:$md4+px) and (max-width:$md3+px) {
+         &:nth-child(odd) {
+            margin-right: 18px;
+         }
+      }
+
+      @media (max-width:$md3+px) {
+         display: inline-block;
+         width: 233px;
+         margin-bottom: 30px;
+
+         &:after {
+            height: 190px;
+         }
+      }
+
+      @media (min-width:$md3+px) {
+         display: grid;
+         grid-template-columns: min-content 1fr;
+         column-gap: 40px;
+         padding-right: 30px;
+
+         &:not(:last-child) {
+            margin-bottom: 50px;
+         }
+
+         &:after {
+            height: 68px;
+         }
+      }
+
+      &__img {
+         position: relative;
+         height: 130px;
+
+         @media (max-width:$md3+px) {
+            margin-bottom: 10px;
+         }
+
+         @media (min-width:$md3+px) {
+            width: 217px;
+            height: 130px;
+            grid-row: span 2;
+         }
+
+         img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+         }
+      }
+
+      &__head {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         @media (max-width:$md3+px) {
+            padding-bottom: 11px;
+            margin-bottom: 15px;
+         }
+
+         @media (min-width:$md3+px) {
+            margin-top: -16px;
+         }
+      }
+
+      &__body {
+         @media (min-width:$md3+px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+
+         @media (min-width:$md2+px) {
+            padding-right: 60px;
+         }
+      }
+
+      &__title {
+         font-size: 19px;
+         color: #574540;
+         font-weight: 500;
+
+         @media (min-width:$md3+px) {
+            font-size: 24px;
+         }
+      }
+
+      &__icon {
+         cursor: pointer;
+      }
+
+      &__item {
+         font-size: 14px;
+         text-align: center;
+         color: #574540;
+
+         @media (max-width:$md3+px) {
+            &:not(:last-child) {
+               margin-bottom: 14px;
+            }
+         }
+
+         @media (min-width:$md2+px) {
+            font-size: 18px;
+         }
+      }
+   }
+}
+
+.lmp-reserv {
+   &__icon {
+      cursor: pointer;
+   }
+}
