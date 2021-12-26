@@ -99,3 +99,81 @@
       text-decoration: underline;
    }
 }
+
+#modal-reserv {
+   .modal-header {
+      border: none;
+
+      @media (min-width:$md3+px) {
+         margin-bottom: 22px;
+      }
+   }
+
+   .modal-dialog {
+      @media (min-width:$md4+px) {
+         max-width: 780px;
+      }
+   }
+
+   .modal-content {
+      padding: 50px 0 40px 0;
+
+      @media (max-width:$md3+px) {
+         padding: 30px 0px 20px 0px;
+      }
+   }
+
+   .modal-body {
+      text-align: center;
+   }
+
+   .modal-header .close {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+      color: #594741;
+      font-weight: normal;
+      font-size: 34px;
+      padding: 0;
+   }
+
+   .modal-title {
+      color: #594741;
+      text-align: center;
+      flex: 1;
+   }
+
+   .btn {
+      font-size: 16px;
+      padding: 14px 30px;
+      border-radius: 50px;
+      transition: background 0.3s;
+
+      @media (max-width:$md3+px) {
+         font-size: 12px;
+         padding: 12px 20px;
+      }
+
+      &:hover {
+         background-color: #574540;
+         color: #fff;
+      }
+   }
+
+   .btn-fill {
+      color: #594741;
+      background-color: #f7e2c3;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 20px;
+      }
+
+      @media (min-width:$md3+px) {
+         margin-right: 20px;
+      }
+   }
+
+   .btn-stroke {
+      border: 1px solid #574540;
+   }
+}

@@ -56,7 +56,6 @@
                   </label>
                   <label class="profile-label profile-label__select">
                      <span class="profile-label__icon"><i class="fas fa-venus-mars"></i></span>
-                     <!-- <input type="text" class="profile-label__input input" placeholder="Пол" required />-->
                      <select class="profile-header__select">
                         <option value="пол" selected="selected">Пол</option>
                         <option value="Муж">Муж</option>
@@ -112,7 +111,8 @@
             </div>
             <div class="lmp-reserv__head">
                <span class="lmp-reserv__title">Кабинет 1</span>
-               <svg class="lmp-reserv__icon" width="16" height="24" viewBox="0 0 16 24">
+               <svg class="lmp-reserv__icon" data-toggle="modal" data-target="#modal-reserv" width="16" height="24"
+                  viewBox="0 0 16 24">
                   <image width="16" height="24"
                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAABIElEQVQ4ja2UvU4CQRDHf3yZ0NFYYMETGGKgwIrQUPgEvoP4Ctr4CCQmlDRQEBprn8LQWpELCDFGEmKhoJnLnllvCHe7+C/uNvPxm9nZZDKX7RY7dAw8AOeW6x7oxEPzOjfUI1AF7oANUAGugCeglwbwDoyAW8tWB4ppO2gqC5wpiwE0gBsgB3wb+4f52xXXwBFQADImdpA3w6kpdDpdZIETz2TRp3RwCrwqVzqVBPAGXJvnctVQAGWg69nBs8wgAKbKlSx5hUnWhC08AJIzjwAvyp0s6XwbAXyuMJPPIYD5vwIC5U5WYAN8XmEaB2xVyH796WDp2MUmDpDqLnOQYlL0FyByAUhyuHxswMoB8BUd7J04lg1j1tY+yf37YQDwAwFuOx+4vgEnAAAAAElFTkSuQmCC" />
                </svg>
@@ -131,7 +131,8 @@
             </div>
             <div class="lmp-reserv__head">
                <span class="lmp-reserv__title">Кабинет 1</span>
-               <svg class="lmp-reserv__icon" width="16" height="24" viewBox="0 0 16 24">
+               <svg class="lmp-reserv__icon" data-toggle="modal" data-target="#modal-reserv" width="16" height="24"
+                  viewBox="0 0 16 24">
                   <image width="16" height="24"
                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAABIElEQVQ4ja2UvU4CQRDHf3yZ0NFYYMETGGKgwIrQUPgEvoP4Ctr4CCQmlDRQEBprn8LQWpELCDFGEmKhoJnLnllvCHe7+C/uNvPxm9nZZDKX7RY7dAw8AOeW6x7oxEPzOjfUI1AF7oANUAGugCeglwbwDoyAW8tWB4ppO2gqC5wpiwE0gBsgB3wb+4f52xXXwBFQADImdpA3w6kpdDpdZIETz2TRp3RwCrwqVzqVBPAGXJvnctVQAGWg69nBs8wgAKbKlSx5hUnWhC08AJIzjwAvyp0s6XwbAXyuMJPPIYD5vwIC5U5WYAN8XmEaB2xVyH796WDp2MUmDpDqLnOQYlL0FyByAUhyuHxswMoB8BUd7J04lg1j1tY+yf37YQDwAwFuOx+4vgEnAAAAAElFTkSuQmCC" />
                </svg>
@@ -937,8 +938,84 @@
 
    </div>
 </section>
+	<div class="section lmp-section-auth auth">
+   <div class='container'>
+      <div class="row mb-5">
+         <div class="col-12 text-center">
+            <h2 class="section-title">Регистрация</h2>
+         </div>
+      </div>
+      <div class="row  justify-content-center ">
+         <form action="" class="auth-form">
 
+            <h4 class="auth-form__title">Начните с создания учетной записи</h4>
 
+            <label class="auth-form__label">
+               <span class="auth-form__label-icon"><i class="fas fa-user"></i></span>
+               <input type="text" class="auth-form__label-input input" placeholder="Ваше имя" required />
+               <span class="auth-form__label-error">111</span>
+            </label>
+            <label class="auth-form__label">
+               <span class="auth-form__label-icon"><i class="fas fa-envelope"></i></span>
+               <input type="email" class="auth-form__label-input input" placeholder="E-mail" required />
+               <span class="auth-form__label-error">111</span>
+            </label>
+            <label class="auth-form__label auth-form__label-tel">
+               <span class="auth-form__label-icon"><i class="fas fa-phone-alt"></i></span>
+               <input type="tel" class="auth-form__label-input input" placeholder="Номер телефона" required />
+               <span class="auth-form__label-error">111</span>
+               <span class="auth-form__label-tooltip">
+                  на этот номер Вы получите СМС с кодом
+               </span>
+            </label>
+
+            <button class="auth-form__btn">Зарегистрироваться</button>
+
+            <p class="auth-form__text">Нажимая кнопку «Зарегистрироваться», Вы принимаете условия Пользовательского
+               соглашения.</p>
+            <p class="login-or-register">Уже зарегистрированы? <a href="login.html">Войти тут</a> </p>
+         </form>
+      </div>
+   </div>
+</div>
+	<div class="section lmp-section-auth auth">
+   <div class='container'>
+      <div class="row mb-5">
+         <div class="col-12 text-center">
+            <h2 class="section-title">Вход</h2>
+         </div>
+      </div>
+      <div class="row  justify-content-center ">
+         <form action="" class="auth-form">
+
+            <h4 class="auth-form__title auth-form__title-login">Введите номер телефона или электронную почту, которые вы
+               указывали при
+               регистрации</h4>
+
+            <label class="auth-form__label auth-form__label-tel">
+               <span class="auth-form__label-icon"><i class="fas fa-phone-alt"></i></span>
+               <input type="tel" class="auth-form__label-input input" placeholder="E-mail или номер телефона"
+                  required />
+               <span class="auth-form__label-error">111</span>
+            </label>
+
+            <label class="auth-form__label">
+               <span class="auth-form__label-icon"><i class="fas fa-unlock-alt"></i></span>
+               <input type="password" class="auth-form__label-input input" placeholder="Пароль" required />
+               <span class="auth-form__label-error">111</span>
+            </label>
+
+            <div class="auth-form__link">Забыли пароль?</div>
+
+            <button class="auth-form__btn">Войти</button>
+
+            <p class="auth-form__text">Нажимая кнопку «Зарегистрироваться», Вы принимаете условия Пользовательского
+               соглашения.</p>
+            <p class="login-or-register">Нет аккаунта? <a href="register.html">Регистрация</a> </p>
+         </form>
+      </div>
+   </div>
+</div>
 
 
 
@@ -977,6 +1054,23 @@
 					</form>
 
 					<a href="#" class="">Забыли пароль</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modal-reserv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Вы точно хотите отменить бронирование?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<a href="#" class="btn btn-fill">Оставить бронирование</a>
+					<a href="#" class="btn btn-stroke">Отменить бронирование</a>
 				</div>
 			</div>
 		</div>

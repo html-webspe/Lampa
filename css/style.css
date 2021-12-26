@@ -85,6 +85,69 @@ button {
   color: #000;
   text-decoration: underline; }
 
+#modal-reserv .modal-header {
+  border: none; }
+  @media (min-width: 767.98px) {
+    #modal-reserv .modal-header {
+      margin-bottom: 22px; } }
+
+@media (min-width: 575.98px) {
+  #modal-reserv .modal-dialog {
+    max-width: 780px; } }
+
+#modal-reserv .modal-content {
+  padding: 50px 0 40px 0; }
+  @media (max-width: 767.98px) {
+    #modal-reserv .modal-content {
+      padding: 30px 0px 20px 0px; } }
+
+#modal-reserv .modal-body {
+  text-align: center; }
+
+#modal-reserv .modal-header .close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  color: #594741;
+  font-weight: normal;
+  font-size: 34px;
+  padding: 0; }
+
+#modal-reserv .modal-title {
+  color: #594741;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+#modal-reserv .btn {
+  font-size: 16px;
+  padding: 14px 30px;
+  border-radius: 50px;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s; }
+  @media (max-width: 767.98px) {
+    #modal-reserv .btn {
+      font-size: 12px;
+      padding: 12px 20px; } }
+  #modal-reserv .btn:hover {
+    background-color: #574540;
+    color: #fff; }
+
+#modal-reserv .btn-fill {
+  color: #594741;
+  background-color: #f7e2c3; }
+  @media (max-width: 767.98px) {
+    #modal-reserv .btn-fill {
+      margin-bottom: 20px; } }
+  @media (min-width: 767.98px) {
+    #modal-reserv .btn-fill {
+      margin-right: 20px; } }
+
+#modal-reserv .btn-stroke {
+  border: 1px solid #574540; }
+
 .lmp-section-reserv .lmp-reserv {
   position: relative;
   width: 100%;
@@ -611,9 +674,20 @@ button {
     border-radius: 15px 15px 0 0;
     -o-object-fit: cover;
     object-fit: cover; }
+  @media (max-width: 991.98px) {
+    .cabinets-slider__item:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #b6a79c;
+      z-index: 1;
+      border-radius: 15px 15px 0 0;
+      opacity: 0.3; } }
 
 .cabinets-slider-button {
-  opacity: 0;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -630,6 +704,9 @@ button {
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s; }
+  @media (min-width: 991.98px) {
+    .cabinets-slider-button {
+      opacity: 0; } }
   @media (max-width: 767.98px) {
     .cabinets-slider-button {
       font-size: 18px;
@@ -1227,3 +1304,182 @@ button {
     border: 1px solid #dedede;
     background-color: #f6f6f5;
     color: #dedede; }
+
+.lmp-section-auth .section-title {
+  margin-bottom: 0; }
+
+.lmp-section-auth .auth-form {
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px; }
+  .lmp-section-auth .auth-form__title {
+    font-size: 18px;
+    color: #594741;
+    margin-bottom: 50px; }
+    @media (max-width: 767.98px) {
+      .lmp-section-auth .auth-form__title {
+        font-size: 14px; } }
+    @media (max-width: 575.98px) {
+      .lmp-section-auth .auth-form__title {
+        padding: 0 15px; } }
+  .lmp-section-auth .auth-form__label {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 1px solid #ededed;
+    padding: 11px 20px;
+    border-radius: 30px; }
+    @media (max-width: 991.98px) {
+      .lmp-section-auth .auth-form__label {
+        margin-bottom: 15px; } }
+  .lmp-section-auth .auth-form__label-tel:hover .auth-form__label-tooltip, .lmp-section-auth .auth-form__label-tel:focus .auth-form__label-tooltip {
+    display: block; }
+  .lmp-section-auth .auth-form__label-icon {
+    margin-right: 20px; }
+    .lmp-section-auth .auth-form__label-icon i:before {
+      font-size: 28px;
+      color: #594741; }
+      @media (max-width: 991.98px) {
+        .lmp-section-auth .auth-form__label-icon i:before {
+          font-size: 18px; } }
+  .lmp-section-auth .auth-form__label-input {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #594741; }
+    @media (max-width: 991.98px) {
+      .lmp-section-auth .auth-form__label-input {
+        font-size: 12px; } }
+    .lmp-section-auth .auth-form__label-input::-webkit-input-placeholder {
+      color: #999999;
+      font-family: 'Montserrat';
+      font-size: 18px;
+      text-align: left;
+      letter-spacing: 0.16px; }
+    .lmp-section-auth .auth-form__label-input:-ms-input-placeholder {
+      color: #999999;
+      font-family: 'Montserrat';
+      font-size: 18px;
+      text-align: left;
+      letter-spacing: 0.16px; }
+    .lmp-section-auth .auth-form__label-input::-ms-input-placeholder {
+      color: #999999;
+      font-family: 'Montserrat';
+      font-size: 18px;
+      text-align: left;
+      letter-spacing: 0.16px; }
+    .lmp-section-auth .auth-form__label-input::placeholder {
+      color: #999999;
+      font-family: 'Montserrat';
+      font-size: 18px;
+      text-align: left;
+      letter-spacing: 0.16px; }
+      @media (max-width: 991.98px) {
+        .lmp-section-auth .auth-form__label-input::-webkit-input-placeholder {
+          font-size: 12px; }
+        .lmp-section-auth .auth-form__label-input:-ms-input-placeholder {
+          font-size: 12px; }
+        .lmp-section-auth .auth-form__label-input::-ms-input-placeholder {
+          font-size: 12px; }
+        .lmp-section-auth .auth-form__label-input::placeholder {
+          font-size: 12px; } }
+  .lmp-section-auth .auth-form__label-error {
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    color: #ff5c5c;
+    font-size: 12px;
+    display: none; }
+  .lmp-section-auth .auth-form__label-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    max-width: 165px;
+    color: #594741;
+    padding: 9px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 13px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 12px; }
+    .lmp-section-auth .auth-form__label-tooltip:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 58%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 7.5px 0 7.5px;
+      border-color: #ffffff transparent transparent transparent; }
+  .lmp-section-auth .auth-form__btn {
+    color: #574540;
+    font-family: "Montserrat";
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 38px;
+    padding: 20px 44px;
+    background-color: #f7e2c3;
+    -webkit-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+    margin-bottom: 30px; }
+    @media (max-width: 991.98px) {
+      .lmp-section-auth .auth-form__btn {
+        font-size: 12px;
+        padding: 10px 30px;
+        margin-bottom: 20px; } }
+    @media (min-width: 991.98px) {
+      .lmp-section-auth .auth-form__btn {
+        width: 100%; } }
+    .lmp-section-auth .auth-form__btn:hover {
+      background-color: #594741;
+      color: #fff;
+      border-color: transparent; }
+  .lmp-section-auth .auth-form__text {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #999999; }
+    @media (max-width: 575.98px) {
+      .lmp-section-auth .auth-form__text {
+        padding: 0 10px; } }
+    @media (max-width: 991.98px) {
+      .lmp-section-auth .auth-form__text {
+        font-size: 12px;
+        margin-bottom: 20px; } }
+
+.login-or-register {
+  font-size: 18px;
+  color: #999999;
+  text-align: center; }
+  @media (max-width: 991.98px) {
+    .login-or-register {
+      font-size: 14px; } }
+  .login-or-register a {
+    color: #594741;
+    text-decoration: underline; }
+
+@media (min-width: 991.98px) {
+  .auth-form__title-login {
+    margin-left: -50px;
+    margin-right: -50px; } }
+
+.auth-form__link {
+  color: #999999;
+  font-size: 18px;
+  margin-bottom: 50px; }
+  @media (max-width: 767.98px) {
+    .auth-form__link {
+      font-size: 14px; } }
