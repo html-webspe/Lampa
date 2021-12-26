@@ -161,13 +161,16 @@
          &__title {
             @media (max-width:$md3+px) {
                padding: 8px 0;
-               font-size: 12px;
-               color: #594741;
             }
          }
 
          &__value {
             padding-left: 57px;
+
+            @media (max-width:$md3+px) {
+               font-size: 12px;
+               color: #594741;
+            }
 
             @media (min-width:$md2+px) {
                padding-left: 67px;
