@@ -62,41 +62,7 @@ let _slideToggle = (target, duration = 500) => {
       return _slideUp(target, duration);
    }
 }
-// Подключение файла стилей
-// Базовые стили поключаются в src/scss/forms.scss
-// Файл базовых стилей src/scss/forms/select.scss
 
-/*
-Документация:
-Снипет (HTML): sel
-*/
-/*
-// Настройки
-Для селекта (select):
-class="имя класса" - модификатор к конкретному селекту
-multiple - мультивыбор
-data-tags - режим тегов, только для (только для multiple)
-data-scroll - включит прокрутку для выпадающего списка, дополнительно можно подключить кастомный скролл simplebar в app.js. Указанное число для атрибута ограничит высоту
-data-checkbox - стилизация элементов по checkbox (только для multiple)
-data-show-selected - отключает скрытие выбранного элемента
-data-search - позволяет искать по выпадающему списку
-data-open - селект открыт сразу
-
-Для плейсхолдера (Плейсхолдер - это option с value=""):
-data-label для плейсхолдера, добавляет label к селекту
-data-show для плейсхолдера, показывает его в списке (только для единичного выбора)
-
-Для элемента (option):
-data-class="имя класса" - добавляет класс
-data-asset="путь к картинке или текст" - добавляет структуру 2х колонок и данными
-*/
-
-/*
-// Возможные доработки:
-попап на мобилке
-*/
-
-// Получение всех select на странице
 const selectItems = document.querySelectorAll('select');
 // Объект построения Select
 const selectModule = {
@@ -209,6 +175,7 @@ const selectModule = {
    selectsActions(e) {
       const targetElement = e.target;
       const targetType = e.type;
+      selectModule.selectsСlose();
       if (targetElement.closest(selectModule.getSelectClass(selectModule.selectClasses.classSelect)) || targetElement.closest(selectModule.getSelectClass(selectModule.selectClasses.classSelectTag))) {
          const selectItem = targetElement.closest('.select') ? targetElement.closest('.select') : document.querySelector(`.${selectModule.selectClasses.classSelect}[data-id="${targetElement.closest(selectModule.getSelectClass(selectModule.selectClasses.classSelectTag)).dataset.selectId}"]`);
          const originalSelect = selectModule.getSelectElement(selectItem).originalSelect;

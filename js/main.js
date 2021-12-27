@@ -4,7 +4,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 //@prepros-append libs/swiper.min.js
 //@prepros-append slider.js
-//@prepros-append functions.js
 //@prepros-append select.js
 
 /**
@@ -2103,41 +2102,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
    }
 });
-/* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
-
-/* Проверка мобильного браузера */
-var isMobile = { Android: function Android() {
-      return navigator.userAgent.match(/Android/i);
-   }, BlackBerry: function BlackBerry() {
-      return navigator.userAgent.match(/BlackBerry/i);
-   }, iOS: function iOS() {
-      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-   }, Opera: function Opera() {
-      return navigator.userAgent.match(/Opera Mini/i);
-   }, Windows: function Windows() {
-      return navigator.userAgent.match(/IEMobile/i);
-   }, any: function any() {
-      return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
-   } };
-/* Добавление класса touch для HTML если браузер мобильный */
-function addTouchClass() {
-   // Добавление класса _touch для HTML если браузер мобильный
-   if (isMobile.any()) document.documentElement.classList.add('touch');
-}
-
-//==== Вспомогательные модули плавного расскрытия и закрытия объекта ======================================================================================================================================================================
-
-//==== Вспомогательные модули блокировки прокрутки и скочка ====================================================================================================================================================================================================================================================================================
-
-
-// Модуль "показать еще" (в работе) =======================================================================================================================================================================================================================
-
-/*
-Документация по работе в шаблоне:
-Документация плагина:
-Сниппет (HTML):
-*/
-
 var _slideUp = function _slideUp(target) {
    var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
 
@@ -2208,41 +2172,7 @@ var _slideToggle = function _slideToggle(target) {
       return _slideUp(target, duration);
    }
 };
-// Подключение файла стилей
-// Базовые стили поключаются в src/scss/forms.scss
-// Файл базовых стилей src/scss/forms/select.scss
 
-/*
-Документация:
-Снипет (HTML): sel
-*/
-/*
-// Настройки
-Для селекта (select):
-class="имя класса" - модификатор к конкретному селекту
-multiple - мультивыбор
-data-tags - режим тегов, только для (только для multiple)
-data-scroll - включит прокрутку для выпадающего списка, дополнительно можно подключить кастомный скролл simplebar в app.js. Указанное число для атрибута ограничит высоту
-data-checkbox - стилизация элементов по checkbox (только для multiple)
-data-show-selected - отключает скрытие выбранного элемента
-data-search - позволяет искать по выпадающему списку
-data-open - селект открыт сразу
-
-Для плейсхолдера (Плейсхолдер - это option с value=""):
-data-label для плейсхолдера, добавляет label к селекту
-data-show для плейсхолдера, показывает его в списке (только для единичного выбора)
-
-Для элемента (option):
-data-class="имя класса" - добавляет класс
-data-asset="путь к картинке или текст" - добавляет структуру 2х колонок и данными
-*/
-
-/*
-// Возможные доработки:
-попап на мобилке
-*/
-
-// Получение всех select на странице
 var selectItems = document.querySelectorAll('select');
 // Объект построения Select
 var selectModule = {
@@ -2360,6 +2290,7 @@ var selectModule = {
    selectsActions: function selectsActions(e) {
       var targetElement = e.target;
       var targetType = e.type;
+      selectModule.selectsСlose();
       if (targetElement.closest(selectModule.getSelectClass(selectModule.selectClasses.classSelect)) || targetElement.closest(selectModule.getSelectClass(selectModule.selectClasses.classSelectTag))) {
          var selectItem = targetElement.closest('.select') ? targetElement.closest('.select') : document.querySelector("." + selectModule.selectClasses.classSelect + "[data-id=\"" + targetElement.closest(selectModule.getSelectClass(selectModule.selectClasses.classSelectTag)).dataset.selectId + "\"]");
          var originalSelect = selectModule.getSelectElement(selectItem).originalSelect;

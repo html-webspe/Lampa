@@ -126,7 +126,8 @@ button {
   border-radius: 50px;
   -webkit-transition: background 0.3s;
   -o-transition: background 0.3s;
-  transition: background 0.3s; }
+  transition: background 0.3s;
+  color: #594741; }
   @media (max-width: 767.98px) {
     #modal-reserv .btn {
       font-size: 12px;
@@ -169,15 +170,19 @@ button {
     background-color: #f7e2c3;
     z-index: -1; }
   @media (min-width: 575.98px) and (max-width: 767.98px) {
-    .lmp-section-reserv .lmp-reserv:nth-child(odd) {
-      margin-right: 18px; } }
-  @media (max-width: 767.98px) {
     .lmp-section-reserv .lmp-reserv {
-      display: inline-block;
       width: 233px;
       margin-bottom: 30px; }
+      .lmp-section-reserv .lmp-reserv:nth-child(odd) {
+        margin-right: 18px; } }
+  @media (max-width: 575.98px) {
+    .lmp-section-reserv .lmp-reserv {
+      margin-bottom: 30px; }
       .lmp-section-reserv .lmp-reserv:after {
-        height: 190px; } }
+        height: 50%; } }
+  @media (min-width: 575.98px) {
+    .lmp-section-reserv .lmp-reserv:after {
+      height: 190px; } }
   @media (min-width: 767.98px) {
     .lmp-section-reserv .lmp-reserv {
       display: -ms-grid;
@@ -195,14 +200,13 @@ button {
         height: 68px; } }
   .lmp-section-reserv .lmp-reserv__img {
     position: relative;
-    height: 130px; }
+    padding-bottom: 65%; }
     @media (max-width: 767.98px) {
       .lmp-section-reserv .lmp-reserv__img {
         margin-bottom: 10px; } }
     @media (min-width: 767.98px) {
       .lmp-section-reserv .lmp-reserv__img {
         width: 217px;
-        height: 130px;
         -ms-grid-row-span: 2;
         grid-row: span 2; } }
     .lmp-section-reserv .lmp-reserv__img img {
@@ -213,6 +217,7 @@ button {
       height: 100%;
       border-radius: 10px; }
   .lmp-section-reserv .lmp-reserv__head {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -222,6 +227,21 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media (max-width: 575.98px) {
+      .lmp-section-reserv .lmp-reserv__head {
+        background-color: #f7e2c3;
+        margin-left: -16px;
+        margin-right: -16px;
+        padding: 0 16px; }
+        .lmp-section-reserv .lmp-reserv__head:after {
+          content: '';
+          position: absolute;
+          bottom: 100%;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: #f7e2c3;
+          z-index: -1; } }
     @media (max-width: 767.98px) {
       .lmp-section-reserv .lmp-reserv__head {
         padding-bottom: 11px;
@@ -350,11 +370,13 @@ button {
 
 .lmp-section-profile .btn-transparent {
   border: 2px solid #574540;
-  padding: 12px 0;
-  width: 100%; }
+  padding: 12px 0; }
   @media (max-width: 991.98px) {
     .lmp-section-profile .btn-transparent {
-      padding: 10px 30px; } }
+      padding: 10px 47px; } }
+  @media (min-width: 991.98px) {
+    .lmp-section-profile .btn-transparent {
+      width: 100%; } }
 
 .lmp-section-profile .fieldset-tooltip {
   display: none;
@@ -535,9 +557,9 @@ button {
     height: 100%; }
     @media (max-width: 575.98px) {
       .lmp-section-cabinets .cabinets-item {
-        max-width: 233px;
-        margin-left: auto;
-        margin-right: auto; } }
+        /*max-width: 233px;
+         margin-left: auto;
+         margin-right: auto;*/ } }
     .lmp-section-cabinets .cabinets-item:hover .cabinets-slider-button {
       opacity: 0.7; }
     .lmp-section-cabinets .cabinets-item:hover .cabinets-slider-button-prev.swiper-button-disabled,
@@ -638,7 +660,8 @@ button {
           margin-bottom: 24px; } }
     .lmp-section-cabinets .cabinets-item__bnt {
       border: 1px solid transparent;
-      border-radius: 25px; }
+      border-radius: 25px;
+      color: #594741; }
       @media (max-width: 1200px) {
         .lmp-section-cabinets .cabinets-item__bnt {
           padding: 10px 18px;
@@ -648,7 +671,6 @@ button {
           padding: 15px 23px;
           font-size: 12px; } }
       .lmp-section-cabinets .cabinets-item__bnt.btn-fill {
-        color: #594741;
         background-color: #f7e2c3; }
         @media (max-width: 1200px) {
           .lmp-section-cabinets .cabinets-item__bnt.btn-fill {
@@ -1215,13 +1237,21 @@ button {
     @media (max-width: 1200px) {
       .cabinets-payment__item {
         font-size: 14px; } }
+    @media (max-width: 991.98px) {
+      .cabinets-payment__item {
+        margin-bottom: 30px; } }
     @media (max-width: 767.98px) {
       .cabinets-payment__item {
         font-size: 12px; } }
+    @media (max-width: 575.98px) {
+      .cabinets-payment__item .lmp-reserv__icon {
+        position: relative;
+        right: 10px; } }
   .cabinets-payment .bold {
     font-size: 30px;
     font-weight: bold;
-    color: #594741; }
+    color: #594741;
+    white-space: nowrap; }
     @media (max-width: 1200px) {
       .cabinets-payment .bold {
         font-size: 16px; } }
@@ -1480,6 +1510,7 @@ button {
     margin-right: -50px; } }
 
 .auth-form__link {
+  display: inline-block;
   color: #999999;
   font-size: 18px;
   margin-bottom: 50px; }

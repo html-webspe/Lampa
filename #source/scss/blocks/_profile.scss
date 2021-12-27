@@ -80,7 +80,7 @@
       }
 
       &:hover {
-         background-color: #594741;
+         background-color: $acentColor;
          color: #fff;
          border-color: transparent;
       }
@@ -91,12 +91,15 @@
    }
 
    .btn-transparent {
-      border: 2px solid #574540;
+      border: 2px solid $colorBold;
       padding: 12px 0;
-      width: 100%;
 
       @media (max-width:$md2+px) {
-         padding: 10px 30px;
+         padding: 10px 47px;
+      }
+
+      @media (min-width:$md2+px) {
+         width: 100%;
       }
 
    }
@@ -106,7 +109,7 @@
       position: absolute;
       bottom: 100%;
       right: 0;
-      color: #594741;
+      color: $acentColor;
       padding: 9px 14px;
       background-color: #fff;
       border-radius: 5px;
@@ -169,7 +172,7 @@
 
             @media (max-width:$md3+px) {
                font-size: 12px;
-               color: #594741;
+               color: $acentColor;
             }
 
             @media (min-width:$md2+px) {
@@ -191,7 +194,7 @@
       i {
          &:before {
             font-size: 28px;
-            color: #594741;
+            color: $acentColor;
 
             @media (max-width:$md2+px) {
                font-size: 18px;

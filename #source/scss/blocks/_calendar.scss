@@ -282,8 +282,19 @@
          font-size: 14px;
       }
 
+      @media (max-width:$md2+px) {
+         margin-bottom: 30px;
+      }
+
       @media (max-width:$md3+px) {
          font-size: 12px;
+      }
+
+      @media (max-width:$md4+px) {
+         .lmp-reserv__icon {
+            position: relative;
+            right: 10px;
+         }
       }
    }
 
@@ -291,6 +302,7 @@
       font-size: 30px;
       font-weight: bold;
       color: $acentColor;
+      white-space: nowrap;
 
 
       @media (max-width:$md1+px) {
